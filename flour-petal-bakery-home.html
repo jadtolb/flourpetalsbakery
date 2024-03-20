@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flour Petals Bakery</title>
+    <link rel="stylesheet" href="flour-petal-bakery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Truculenta:opsz,wght@12..72,100..900&family=Work+Sans:wght@400;500;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="description" content="Welcome to Flour Petals Bakery, where every treat blossoms with flavor. Indulge in delicate macarons, whimsical cupcakes, artisanal cakes, heavenly cookies, fudgy brownies, 
+      tangy lemon tarts, flavorful fruit tarts, flaky pies, and creamy cheesecakes. Each bite is meticulously curated to elevate your moments of joy and celebration. Ready to indulge? Fill out our email contact 
+      form to place your order, and our dedicated baker will get back to you within 24-48 hours. Let Flour Petals Bakery turn every occasion into a sweet sensation.">
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img src="flour-images/flour-petals-logo-image.jpg">
+        <img src="flour-images/flour-petals-title-image.jpg">
+        <ul class="sidebar">
+          <li><a onclick="hideSidebar()" href="#" ><svg xmlns="http://www.w3.org/2000/svg" height="75" viewBox="0 -960 960 960" width="75">
+            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+          <li><a href="flour-petal-bakery-home.html" >Home</a></li>
+          <li><a href="flour-petal-bakery-gallery.html" >Gallery</a></li>
+          <li><a href="https://www.instagram.com/flour_petals_bakery/" target="_blank"><ion-icon name="logo-instagram"></ion-icon> Insta</a></li>
+        </ul>
+        <ul class="right-nav">
+          <li class="hideOnMobile"><a href="flour-petal-bakery-home.html" class="link">Home</a></li>
+          <li class="hideOnMobile"><a href="flour-petal-bakery-gallery.html" class="link">Gallery</a></li>
+          <li class="hideOnMobile"><a href="https://www.instagram.com/flour_petals_bakery/" target="_blank" class="link"><ion-icon name="logo-instagram"></ion-icon> Insta</a></li>
+          <li><a onclick="showSidebar()" href="#" class="link menu-button"><svg xmlns="http://www.w3.org/2000/svg" height="75" viewBox="0 -960 960 960" width="75">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="background-image">
+      <div class="about-me">
+        <div class="statement">
+          <h3>
+            Welcome to Flour Petals Bakery: Where Every Treat Blossoms with Flavor
+          </h3>
+          <p>
+            From delicate macarons to whimsical cupcakes, and artisanal cakes to heavenly cookies. 
+            Indulge in the rich flavors of our fudgy brownies, tangy lemon tarts, flavorful fruit tarts, flaky pies, and creamy cheesecakes. 
+          </p>
+          <p>
+            Each bite is meticulously curated to elevate your moments of joy and celebration.
+          </p>
+          <p>
+            Ready to indulge? 
+          </p>
+          <p>
+            Simply fill out our email contact form to place your order, and our dedicated baker will get back to you within 24-48 hours. 
+            Let Flour Petal Bakery turn every occasion into a sweet sensation.
+          </p>
+          <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="https://api.web3forms.com/submit" method="post">
+              <input type="hidden" name="access_key" value="e94a0207-11d7-4f24-a86d-c3cdef820533">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name.." required>
+      
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="Your email.." required>
+      
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
+      
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+    <footer>
+      <p>
+        COPYRIGHT 2024 - ALL RIGHTS
+      </p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+      const sidebar = document.querySelector('.sidebar');
+
+      function showSidebar() {
+        sidebar.style.display = "flex"
+      }
+
+      function hideSidebar() {
+        sidebar.style.display = "none"
+      }
+    </script>
+  </body>
+</html>
