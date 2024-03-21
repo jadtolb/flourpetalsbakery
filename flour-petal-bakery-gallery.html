@@ -88,10 +88,12 @@
       function openFullImg(pic) {
         fullImgBox.style.display = "flex";
         fullImg.src = pic;
+        document.body.style.overflow = "hidden";
       }
 
       function closeFullImg() {
         fullImgBox.style.display = "none";
+        document.body.style.overflow = "auto";
       }      
 
       const sidebar = document.querySelector('.sidebar');
